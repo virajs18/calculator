@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Viraj Sonar </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .box{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #8d8787;
+        }
+        .box1{
+            width: 154px;
+            border-radius: 5rem;
+        }
+        .bgO{
+            background-color: #ff0000;
+        }
+        .bgG{
+            background-color: #6b6868;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper" class="w-screen h-screen wh-white text-white font-bold text-xl overflow-hidden">
+
+        <div class="min-w-[375px] max-w-[425px] h-screen wh-white flex flex-col mx-auto px-5 py-5 gap-10">
+
+            <!--display area-->
+            <div class="w-full h-[25%] min-h-[60px] flex justify-end items-end">
+                <div class="DisplayC text-4xl">0</div>
+            </div>
+
+            <!--opration-->
+            <div class="grid grid-cols-4 gap-4">
+                <button class="box button flex justify-center items-center bgG Clear">C</button>
+                <button class="box button flex justify-center items-center bgG">+/-</button>
+                <button class="box button flex justify-center items-center bgG percentage">%</button>
+                <button class="box button flex justify-center items-center bgO divide">/</button>
+                <button class="box button flex justify-center items-center num7">7</button>
+                <button class="box button flex justify-center items-center num8">8</button>
+                <button class="box button flex justify-center items-center num9">9</button>
+                <button class="box button flex justify-center items-center bgO multi">x</button>
+                <button class="box button flex justify-center items-center num4">4</button>
+                <button class="box button flex justify-center items-center num5">5</button>
+                <button class="box button flex justify-center items-center num6">6</button>
+                <button class="box button flex justify-center items-center bgO minus">-</button>
+                <button class="box button flex justify-center items-center num1">1</button>
+                <button class="box button flex justify-center items-center num2">2</button>
+                <button class="box button flex justify-center items-center num3">3</button>
+                <button class="box button flex justify-center items-center bgO plus">+</button>
+                <button class="box button box1 flex justify-center items-center col-span-2 num0">0</button>
+                <button class="box button flex justify-center items-center numd">.</button>
+                <button class="box button flex justify-center items-center bgO equal">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
